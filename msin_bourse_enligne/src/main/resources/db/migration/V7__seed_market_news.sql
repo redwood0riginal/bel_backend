@@ -1,0 +1,113 @@
+-- Seed Market News
+-- V7__seed_market_news.sql
+
+INSERT INTO market_schema.market_news 
+(headline, urgency, no_lines_of_text, lines_of_text, url_link, published_at, created_at)
+VALUES
+('Attijariwafa Bank reports strong Q4 results with 15% profit growth', 'NORMAL', '3', 
+ ARRAY['Attijariwafa Bank announced impressive Q4 financial results today.', 
+       'Net profit increased by 15% compared to the same period last year.', 
+       'The bank attributes growth to digital transformation and regional expansion.'],
+ 'https://www.attijariwafabank.com/news/q4-results', 
+ CURRENT_TIMESTAMP - INTERVAL '2 hours', CURRENT_TIMESTAMP),
+
+('Casablanca Stock Exchange reaches new milestone with MASI above 13,500', 'HIGH', '2',
+ ARRAY['The MASI index crossed the 13,500 mark today for the first time this year.',
+       'Market analysts attribute the surge to strong banking sector performance.'],
+ 'https://www.casablanca-bourse.com/news/masi-milestone',
+ CURRENT_TIMESTAMP - INTERVAL '4 hours', CURRENT_TIMESTAMP),
+
+('Maroc Telecom announces 5G network expansion across major cities', 'NORMAL', '4',
+ ARRAY['Maroc Telecom (IAM) unveiled plans for 5G network rollout.',
+       'The expansion will cover Casablanca, Rabat, and Marrakech by Q2 2025.',
+       'Investment estimated at 2 billion MAD for infrastructure upgrade.',
+       'Expected to boost digital economy and attract tech investments.'],
+ 'https://www.iam.ma/news/5g-expansion',
+ CURRENT_TIMESTAMP - INTERVAL '6 hours', CURRENT_TIMESTAMP),
+
+('Label Vie opens 5 new stores, strengthens retail presence', 'NORMAL', '3',
+ ARRAY['Label Vie inaugurated 5 new Carrefour stores across Morocco.',
+       'New locations in Tangier, Agadir, and Fes.',
+       'Company targets 100 stores by end of 2025.'],
+ 'https://www.labelvie.ma/news/new-stores',
+ CURRENT_TIMESTAMP - INTERVAL '8 hours', CURRENT_TIMESTAMP),
+
+('BCP launches new digital banking platform for SMEs', 'NORMAL', '3',
+ ARRAY['Banque Centrale Populaire introduced a comprehensive digital platform.',
+       'Platform offers instant credit approval and cash management tools.',
+       'Aims to support 50,000 SMEs in their digital transformation.'],
+ 'https://www.gbp.ma/news/digital-platform',
+ CURRENT_TIMESTAMP - INTERVAL '10 hours', CURRENT_TIMESTAMP),
+
+('LafargeHolcim Morocco invests in sustainable cement production', 'NORMAL', '4',
+ ARRAY['LafargeHolcim announced 500 million MAD investment in green technology.',
+       'New facility will reduce CO2 emissions by 30%.',
+       'Part of global commitment to carbon neutrality by 2050.',
+       'Expected to create 200 new jobs in the region.'],
+ 'https://www.lafargeholcim.ma/news/sustainability',
+ CURRENT_TIMESTAMP - INTERVAL '12 hours', CURRENT_TIMESTAMP),
+
+('URGENT: Trading suspended for 15 minutes due to technical issue', 'URGENT', '2',
+ ARRAY['Casablanca Stock Exchange temporarily suspended trading at 11:30 AM.',
+       'Technical issue resolved, trading resumed at 11:45 AM.'],
+ 'https://www.casablanca-bourse.com/alerts/trading-suspension',
+ CURRENT_TIMESTAMP - INTERVAL '14 hours', CURRENT_TIMESTAMP),
+
+('Cosumar reports increased sugar production amid strong demand', 'NORMAL', '3',
+ ARRAY['Cosumar posted 8% increase in sugar production for 2024.',
+       'Domestic consumption rose due to food industry growth.',
+       'Company maintains market leadership with 60% share.'],
+ 'https://www.cosumar.ma/news/production-report',
+ CURRENT_TIMESTAMP - INTERVAL '16 hours', CURRENT_TIMESTAMP),
+
+('Wafa Assurance launches new health insurance products', 'NORMAL', '3',
+ ARRAY['Wafa Assurance unveiled three new health insurance plans.',
+       'Products target young professionals and families.',
+       'Digital subscription available through mobile app.'],
+ 'https://www.wafaassurance.ma/news/health-products',
+ CURRENT_TIMESTAMP - INTERVAL '18 hours', CURRENT_TIMESTAMP),
+
+('Managem discovers new mineral deposits in Draa-Tafilalet region', 'HIGH', '4',
+ ARRAY['Managem announced discovery of significant copper deposits.',
+       'Estimated reserves could support 15 years of production.',
+       'Exploration phase to begin in Q1 2025.',
+       'Project expected to boost regional employment by 500 jobs.'],
+ 'https://www.managemgroup.com/news/mineral-discovery',
+ CURRENT_TIMESTAMP - INTERVAL '20 hours', CURRENT_TIMESTAMP),
+
+('Auto Hall partners with Chinese EV manufacturer for local assembly', 'NORMAL', '3',
+ ARRAY['Auto Hall signed agreement with leading Chinese electric vehicle maker.',
+       'Assembly plant to be established in Kenitra automotive city.',
+       'First EVs expected to roll out by mid-2025.'],
+ 'https://www.autohall.ma/news/ev-partnership',
+ CURRENT_TIMESTAMP - INTERVAL '22 hours', CURRENT_TIMESTAMP),
+
+('HPS expands payment solutions to West African markets', 'NORMAL', '4',
+ ARRAY['HPS secured contracts with 5 banks in West Africa.',
+       'PowerCARD platform to be deployed across Senegal and Ivory Coast.',
+       'Expected revenue increase of 25% from regional expansion.',
+       'Reinforces position as leading payment technology provider.'],
+ 'https://www.hps-worldwide.com/news/west-africa',
+ CURRENT_TIMESTAMP - INTERVAL '1 day', CURRENT_TIMESTAMP),
+
+('SNI increases stake in Attijariwafa Bank to 48%', 'HIGH', '3',
+ ARRAY['Societe Nationale d Investissement acquired additional 2% stake in ATW.',
+       'Transaction valued at 3.5 billion MAD.',
+       'Move strengthens SNI portfolio in financial services sector.'],
+ 'https://www.sni.ma/news/atw-stake',
+ CURRENT_TIMESTAMP - INTERVAL '1 day', CURRENT_TIMESTAMP),
+
+('Taqa Morocco signs renewable energy partnership with government', 'NORMAL', '4',
+ ARRAY['Taqa Morocco entered 20-year agreement for solar energy development.',
+       'Project includes 300 MW solar plant in Ouarzazate region.',
+       'Investment estimated at 2.5 billion MAD.',
+       'Aligns with Morocco national renewable energy strategy.'],
+ 'https://www.taqamorocco.com/news/solar-partnership',
+ CURRENT_TIMESTAMP - INTERVAL '1 day', CURRENT_TIMESTAMP),
+
+('Sothema obtains approval for new pharmaceutical manufacturing facility', 'NORMAL', '3',
+ ARRAY['Sothema received regulatory approval for state-of-the-art facility.',
+       'New plant will produce oncology and biosimilar medications.',
+       'Capacity to serve North African and Sub-Saharan markets.'],
+ 'https://www.sothema.ma/news/new-facility',
+ CURRENT_TIMESTAMP - INTERVAL '2 days', CURRENT_TIMESTAMP);
