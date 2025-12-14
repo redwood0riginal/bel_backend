@@ -3,9 +3,9 @@ spring:
     name: msin_bourse_enligne
   
   datasource:
-    url: jdbc:postgresql://ep-shy-sound-a486is0i-pooler.us-east-1.aws.neon.tech/neondb?sslmode=require #jdbc:postgresql://localhost:5432/msin_bourse_db 
-    username: neondb_owner #postgres
-    password: npg_dWJxtHYKB4y2 #ahmed
+    url: ${JDBC_DATABASE_URL} #jdbc:postgresql://ep-shy-sound-a486is0i-pooler.us-east-1.aws.neon.tech/neondb?sslmode=require #jdbc:postgresql://localhost:5432/msin_bourse_db 
+    username: ${JDBC_DATABASE_USERNAME} #neondb_owner #postgres
+    password: ${JDBC_DATABASE_PASSWORD} #npg_dWJxtHYKB4y2 #ahmed
     driver-class-name: org.postgresql.Driver
     hikari:
       maximum-pool-size: 20
